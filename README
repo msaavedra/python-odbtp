@@ -1,0 +1,14 @@
+This package is a set of Python bindings for the Open Database Transfer
+Protocol client library. It is compliant with the Python Database API 
+Specification v2.0 (see PEP 249 for details).
+
+ODBTP is a TCP/IP protocol for connecting to Win32-based databases from any
+platform. See http://http://odbtp.sourceforge.net/ for more information.
+
+To install this package, copy or symlink the odbtp subdirectory into your
+python path. At that point, you should be able to use the library by entering:
+
+import odbtp
+
+in a python program. See the aformentioned PEP 249 for details on the API.
+
