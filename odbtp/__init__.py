@@ -24,6 +24,9 @@ for details).
 
 ODBTP is a TCP/IP protocol for connecting to Win32-based databases from any
 platform. See http://http://odbtp.sourceforge.net/ for more information.
+
+This package was originally a modification of another odbtp binding created
+by Benji York. It is not believed to share code with that package any longer.
 """
 
 __all__ = [

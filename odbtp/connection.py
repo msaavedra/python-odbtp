@@ -1,3 +1,4 @@
+# Copyright (c) 2010 Michael Saavedra
 
 from ctypes import *
 

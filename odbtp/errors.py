@@ -1,3 +1,5 @@
+# Copyright (c) 2010 Michael Saavedra
+
 """Python DB API error handling.
 
 This lays out the standard-defined exceptions, and contains a utility

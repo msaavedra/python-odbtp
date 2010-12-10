@@ -1,3 +1,5 @@
+# Copyright (c) 2010 Michael Saavedra
+
 """A subpackage that deals with data from python, odb and ctypes and handles
 conversions between them.
 """
