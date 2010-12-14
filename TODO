@@ -1,2 +1,4 @@
 Create a setup.py file.
+Unicode support
+Make cursor.setinputsizes() match the spec more closely.
 
