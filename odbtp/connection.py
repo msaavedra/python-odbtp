@@ -289,22 +289,18 @@ class Cursor:
     def fetchall(self):
         """Fetch all remaining rows of a query result.
         
-        Returns a list of tuples.
+        Returns a list of tuples. Note that the cursor's arraysize
+        attribute can affect the performance of this operation.
         """
         rows = []
+        # We'll default to 20 rows at a time, but if the user has set
+        # arraysize even larger, then we'll use that setting.
+        size = max(20, self.arraysize)
         while True:
-            # Default to fetching "arraysize" records at a time...
-            size = self.arraysize
-            
-            # ...unless it is set to a very small value.
-            if size == 1:
-                size = 20
-            
-            moreRows = self.fetchmany(size)
-            rows.extend(moreRows)
-            
-            # If all the rows have been retrieved, stop.
-            if len(moreRows) < size:
+            new_rows = self.fetchmany(size)
+            rows.extend(new_rows)
+            if len(new_rows) < size:
+                # All rows have been retrieved
                 break
         
         return rows
