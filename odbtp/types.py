@@ -114,7 +114,7 @@ class _DbApiTypeObject(object):
     def set_parameter(self, value):
         """Set the parameter column to the given value.
         
-        This data type object must have been bound to a particular paramter
+        This data type object must have been bound to a particular parameter
         before calling this method. The value must also be consistent with
         the information supplied during binding.
         """
