@@ -170,7 +170,7 @@ class NUMBER(_DbApiTypeObject):
                     ODB_INT, ODB_UINT, ODB_NUMERIC, ODB_REAL, 
                     ODB_SMALLINT, ODB_USMALLINT, ODB_TINYINT, ODB_UTINYINT)
     
-    def __init__(self, sub_type='numeric'):
+    def __init__(self, sub_type='decimal'):
         self.sub_type = sub_type.lower()
         self.precision = 8
         
