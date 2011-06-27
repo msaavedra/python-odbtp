@@ -54,6 +54,10 @@ class _DbApiType(type):
     
     This allows the DbApiTypeObject classes (not their instances) to be
     compared to the ODB types.
+    
+    This class could be eliminated now in favor of using the classmethod
+    decorator, but has been kept for now to maintain compatibility with
+    older versions of python.
     """
     def __cmp__(cls, other):
         if other in cls.values:
